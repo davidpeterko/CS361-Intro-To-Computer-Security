@@ -5,47 +5,112 @@ email to the TA by 5pm on Thursday, June 11.
 
 Lecture 1
 1. What uses of the term “security” are relevant to your everyday life?
-     Security can refer to physical security, like home protection, or it can be related to informational security at your job where you must protect valuable information that the company gives you.
+     Security can refer to physical security, like home protection, or it can be related to informational security 
+     at your job where you must protect valuable information that the company gives you. Financial security is also
+     relevant to our everyday lives; we must protect our investments from thieves and our cash/bank account.
 2. What do these have in common?
+     They are require a type of authentication or a means of access. For example, for home security, to bypass the 
+     alarm, you would require a 4 digit pass code to turn it off before the police is notified. For credit card/bank 
+     account it is similiar, you have a pin code you must enter before transactions can occur; bank accounts have account
+     numbers and passwords for online access and etc.
 3. Have you been a victim of lax security?
+     Yes, everyone has. Not every security measure is 100% adamant, and there will be instances of lax security.
 4. What is the likelihood that your laptop is infected? How did you decide?
+     There is probably a 65% my laptop is infected. You can run several spyware or virus scanners on your computer
+     to be definitely sure. Or you can just use an eye ball test`and see if your computer is doing very slow things or
+     acting slow and not processing the right programs in the intended way.
 5. What security measures do you employ on your laptop?
+     Always use a secure shell when doing access, enable anonymity in your browser and avoid clicking on random links
+     that you do not know the destination of where they lead to. Having a very good firewall also is a very good way to 
+     prevent intrusions. 
 6. Do you think they are probably effective?
+     They are good enough to eliminate small-medium threats (such as using McAfee or something similiar), but for lagre 
+     scale attacks or worms/scripts you would just need to be able to avoid places on the internet or just not be connected
+     to the internet to avoid these.
 7. Consider the quote from the FBI official on slide 10. Do you think it overstates
 the case? Justify your answer.
+     No, I do not think it overstates the case. The cyber security and cyber attack issues right now are mos definitely
+     serious. Countries such as China are producing more and more attacks on the US everyday and I have no doubt in my mind 
+     that if they wanted to, they could hi-jack any computer system/network in the US and do whatever they please.
 8. What is the importance in learning about computer security?
+     Learning about computer security allows you to protect yourself from the dangers of the internet and cyberattacks
+     and help aware others of the problem. Also you can help prevent people around you from becoming attacked by providing
+     your own knowledge. As well as chasing a career in helping cover up and prevent the exploitation of these holes in net
+     works of the US.
 
 
 Lecture 2
 1. Consider the five reasons given why security is hard. Can you think of other
 factors?
+     Other factors would include human nature. Some people are born talented with bright minds and sometimes that mind
+     is just biologically programmed to do bad things. You can't stop someone from doing something if it is all they know
+     The problem with the security issue is that there are numerous factors that could be in play at any given time. Technology 
+     is constantly evolving and changing daily and eventually someone/something will surpass its previous version and beat it or
+     destroy it.
 2. Is there a systematic way to enumerate the “bad things” that might happen
 to a program? Why or why not?
+     Debugging, test (specifically pen-testing) and finding all security holes starting from the compilation of the program 
+     are as close as you can get. With so many components of a program, is it really hard to enumerate EVERY problem correctly
+     or entirely. 
 3. Explain the asymmetry between the defender and attacker in security.
+     The defender must keep its private or public key or information from being decrypted or stolen whereas the attacker
+     must work to take that information or find a way to break the encryption. The attacker will try to break the defenders
+     defense, the defender just has to be able to not be broken with negligible advantage. 
 4. Examine the quotes from Morris and Chang. Do you agree? Why or why
 not?
+     I do agree. As long as your computer is connected to an internet network, there will always be threats of a cyber attack. But
+     that solution is not realistic, therefore we have people working daily to ensure a better future in the cyber world where
+     cyber attacks will diminish or do minimal or negligible damage.
 5. Explain the statement on slide 8 that a tradeoff is typically required.
+     By putting so much time and effort into security, it could also hinder or lessen the effectiveness of another area
+     of the program/system that ordinarily wouldnt be affected. For example, if you put all the resources and energy into security, the time
+     to market of the system will be enlongated and the launch will be delayed. 
 
 
 Lecture 3
 1. Define “risk”?
+     Risk is the possibility that a particular threat will adversely impact and information system by exploiting
+     a particular vulnerability.
 2. Do you agree that software security is about managing risk?
+     Yes, by reducing the amount of risks, you are directly reducing the amount of threats/damage to be done in the future. 
+     Managing risk is a surefire way to prevent future problems in your software. 
 3. Name and explain a risk you accept, one you avoid, one you mitigate, and
 one you transfer?
+     1. insurance - sometimes the cost of insurance is greater than the potential loss. 2. disallowed remote log in 
+     3. placing a hazard sign before the hazardous area to prevent people from entering that area. 4. home security systems.
 4. Evaluate annualized loss expectancy as a risk management tool.
+     Using annualized loss expectancy to gather information on total loss to evaluate whether or not the risk is worthy of the
+     fix is a very important fool for lots of companies. If the risk cost ot fix is way greater than the loss itself, then the 
+     assessment is that the risk can be ignored (in some instances). It also calculates the expected value of any security expenditure.
 5. List some factors relevant to rational risk assessment
+     Technical, psychological, economical, financial.
 
 
 Lecture 4
 1. Explain the key distinction between the lists on slides 2 and 3.
+     The List on slide 3 are measures and tools that are used to apply to the list on slide 2 to help them.
 2. Consider your use of computing in your personal life. Which is most important:
 confidentiality, integrity, availability? Justify your answer.
+     Confidentiality is the most important to me. I want to be able to keep my information safe and to myself only
+     unless i want it to be shared. The would be no reason for security if Confidentiality didn't exist, everyone would
+     know everyones information.
 3. What does it mean “to group and categorize data”?
+     To categorize the data into understable sections or groups to help differentiate the data from other data to be able
+     to see what to do with each data group.
 4. Why might authorizations change over time?
+     Authorizations change over time due to just to never have the same passwords or access codes for too long of a time.
+     By changing them periodically it keeps the data protected. If an ex-emplyee has the passwords for something important,
+     if the password is not changed from tiem to time, the ex-employee still has access to delicate and important information that
+     he can access whenever he wants. By keeping the passwords and authentications fresh, it eliminates these risks.
 5. Some of the availability questions seem to relate more to reliability than to
 security. How are the two related?
+     Availability and relibility go hand in hand because data that is available 24/7, is also reliable. If a company goes down
+     and the data they someone needs cannot be reached or accessed, the reliability rating goes down. That company is not reliable
+     enough to keep its servers or information up for its customers/business partners. 
 6. In what contexts would authentication and non-repudiation be considered
 important?
+     If you pay amazon.com for an item with YOUR account, it is assigned to you, this prevents amazon.com from saying they
+     never recieved payment (non-repudiation) from YOUR accont for a specific service or item.
 
 
 Lecture 5
