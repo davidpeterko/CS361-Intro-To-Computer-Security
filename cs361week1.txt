@@ -115,133 +115,213 @@ important?
 
 Lecture 5
 1. Describe a possible metapolicy for a cell phone network? A military database?
+     For a cellphone company, the user must pay the company for usage on their cell phone network. For a military database, the users must be authorized employees that 
+     are allowed access and must have their own unique log in to differentiate between
+     other users.
 2. Why do you need a policy if you have a metapolicy?
+     The metapolicy just describes the security measures of the overall service or situation. Where as a separate policy is system-specific of the metapolicy to proovide guidance to developers and users
+     of the system.
 3. Give three possible rules within a policy concerning students’ academic
 records.
+     A student may only access his or her own academic records. Faculty or staff may not change a students academic record if they are not authorized to do so. Documentation containg the students academic record can only be accessed by specific faculty trained ot handle it and the student themselves. 
 4. Could stakeholders’ interest conflict in a policy? Give an example.
+     Yes, thes stakeholder could have different ideas of the policy or company that conflicts with the policy set in place for the company. FOr example, the stakeholder wants a specific method of access for something, but the policy in place does not allow that.
 5. For the example given involving student SSNs, state the likely metapolicy.
+     The metapolicy most likely states that no one other than the student can use the students SSN.
 6. Explain the statement: ”If you don’t understand the metapolicy, it becomes
 difficult to justify and evaluate the policy.”
+     The metapolicy sets in stone the security measures of the system. If the person doesnt understand the overall impact of the metapolicy it will be harder to understand the reasoning for having the policy in place.
 
 
 Lecture 6
 1. Why is military security mainly about confidentiality? Are there also aspects
 of integrity and availability?
+     There are different security levels to allow different levels of access to different personnel. Yes at different levels of access, there should be a higher level of integrity and availability based on how important that person is trying to access the information. 
 2. Describe the major threat in our MLS thought experiment.
+     Trying to differentiate and make confidential the difference between the sensitivity levels and the individuals permitted to acess the selected pieces of information.
 3. Why do you think the proviso is there?
+     The proviso on confidentiality is there to allow the information to be secure and only available to the people authorized to access such information. Being confidential allows the information to be secure and unknown to outside forces that are not allowed to know about it.
 4. Explain the form of the labels we’re using.
+     Each part of the label (iunclassified, confidential, secret, top secret) are there to provide different levels of access and confidentiality. Each piece of information is categorized into one of these labels to help separate the informations sensitivity level.
 5. Why do you suppose we’re not concerned with how the labels get there?
+     The labeling decisions are out of the scope of our concern. our only concern is being able to differentiate betwene these levels. Each comapny/person that creates these labels are different in their thinking to provide these labels.
 6. Rank the facts listed on slide 6 by sensitivity.
+     From highest sensitivity level to lowest: 6, 2, 4, 5, 1, 3.
 7. Invent labels for documents containing each of those facts.
+     Govt Secret for 6,2. Company Level for 4, 5. Community Level for 1, 3. 
 8. Justify the rules for “mixed” documents.
+     The mixed docuemnts are used to separate documents that both contain sensitive and non-sensitive information. You use the appropriate level and the category to separate the documents. 
 
 
 Lecture 7
 1. Document labels are stamped on the outside. How are “labels” affixed to
 humans?
+     Labels affixed to humans are related to the individuals permitted to access to selected pieces of information.
 2. Explain the difference in semantics of labels for documents and labels for
 humans.
+     Document labels are to differentiate important of the document on the information is contains (for example, for nation secrets allt he way down to common information). And the human labels dictate which personnel is allowed to access which level of information. 
 3. In the context of computers what do you think are the analogues of documents?
 Of humans?
+     The analogues of documents are whatever pieces of information that are stored on the computers database or hard drives. For humans, it is what ever information they possess in their being.
 4. Explain why the Principle of Least Privilege makes sense.
+     For the bare minimum access levle, the Principle of Least Privilege allows the worker to do their assigned job without having too much access to what is not needed to complete the task.
 5. For each of the pairs of labels on slide 6, explain why the answers in the
 third column do or do not make sense.
+     1. makes sense, the clearance is secret so they are allowed to access almost anything from the sensitvity levels. 2. The clearance is for crypto and nuclear, but only at a secret level, and the sensitivity is at top secret which is not in their access. 3. The third one can be either or, the clearance level is secret with respect to nuclear, but the sensitivity is unclassified, so in this case the person should be able to access it but the information could be something very sensitive depending on what it is. 
 
 
 Lecture 8:
 1. Why do you think we introduced the vocabulary terms: objects, subjects,
 actions?
+     They help us understand the type of security policy for our construction.
 2. Prove that dominates is a partial order (reflexive, transitive, antisymmetric).
+     We can see that (L1, S1) dominates (L2, S2) iff L1 >= L2 in the ordering on levels and that S2 is a subset of S1. 
 3. Show that dominates is not a total order.
+     There is a partial order such that security labels A and B such that neither A >= B nor B >= A.
 4. What would have to be true for two labels to dominate each other?
+     They would have to be of the same level or they are equal to each other.
 5. State informally what the the Simple Security property says.
+     The subject S with a certain clearance may be granted READ access to object O with classification as long as tthe subject S's clearance levl is greater than the objects O's classification. 
 6. Explain why it’s “only if” and not “if and only if.”
+     If it is "iff" there can be a contrapositive of the statement but that cannot be true, this statement is only one way so it can only be "only if."
 
 
 Lecture 9
 1. Why isn’t Simple Security enough to ensure confidentiality?
+     The simple security property isnt enough because it only allows read access but it doesnt correctly define the write access on for exmaple Top Secret documents.
 2. Why do we need constraints on write access?
+     We need contrains on the write access to disallow unauthorized parties the ability to change or pollute very sensitive information. 
 3. What is it about computers, as opposed to human beings, that makes that
 particularly important?
+     Some programs or computers may contain malicious logic such as a trojan horse that causes it to "leak" information without the users knowledge. 
 4. State informally what the *-Property says.
+     The * property is a rule for write access. The subject S with a certain level of clerance may be grnated write access to an object O with classification level if the subject's clerance is lower or equal to the objects Os classification level.
 5. What must be true for a subject to have both read and write access to an
 object?
+     The subject must have equal level of clerance for the object O in order to be able to write and read an objects information.
 6. How could we deal with the problem that the General (top secret) can’t send
 orders to the private (Unclassified)?
+     We could give the General certain access privileges that are only unique to him since his clearance level is of the highest in the ranks.
 7. Isn’t it a problem that a corporal can overwrite the war plan? Suggest how
 we might deal with that.
+     We give certain objects a restriction that they cannot be writen without another party's consent that is of equal of higher clearance compared to the object.
 
 
 Lecture 10:
 1. Evaluate changing a subject’s level (up or down) in light of weak tranquility.
+     By moving a subjects level up or down should not violate the "spirit" of the security policy. This is a good impelemenation since it does not change the policy but allows fleixbility with the levels of labels.
 2. Why not just use strong tranquility all the time?
+     Because sometimes soubject and objects may increase in rank or importance and that requires a change of label so that the information stays sensitive when it needs to be on a different level.
 3. Explain why lowering the level of an object may be dangerous.
+     By lower an objects level is dangerous because it allows more access to people of lower clearance and in that case the object must be properly reviewed for a demotion to be sure that allowing lower clerance personnel access to it does not put the system in jeopardy.
 4. Explain what conditions must hold for a downgrade (lowering object level)
 to be secure.
+     The simple security property, the * property and the traquility property must all hold for the idea of the mutli level security (military security).     
+
+
 Lecture 11:
 1. Suppose you wanted to build a (library) system in which all subjects had
 read access to all files, but write access to none of them. What levels could
 you give to subjects and objects?
+     Subject would all have a higher level of clerance than the object, but not equal or lesser to prevent any write accesses.
 2. Why wouldn’t you usually build an access control matrix for a BLP system?
+     As with any access control policy, you could define an ACM for a large BLP system. However, the amtrix would be huge for most realistic systems.
 
 
 Lecture 12
 1. Suppose you had hierarchical levels L, H with L < H, but only had one
 category A. Draw the lattice. (Use your keyboard and editor to draw it; it
 doesn’t have to be fancy.)
+     
+     HA
+     ^ ^
+     | |
+     H LA
+     | |
+      L
+
 2. Given any two labels in a BLP system, what is the algorithm for finding
 their LUB and GLB?
+     You could the cycles from one point the next point and how many different ways there are of reaching a certain level in the hierarchy.
 3. Explain why upward flow in the lattice really is the metapolicy for BLP.
+     For any BLP system, we only want information to flow upward in the lattice of security levels. Equivalently, information may flow from L1 to L2 only if L2 >= L1. You only want levesl to be able to access their own level and below. 
 
 
 Lecture 13
 1. Explain how the BLP rules are supposed to enforce the metapolicy in the
 example on slide 1.
+     By allowing only an upward flow, the information flow is permitted from L to H if L ---> H but no vice versa. This captures th metapolicy of this sytem. If it is possible to instantiate this system such that BLP is satisfied, but information flows in violation of the metapolicy, something is wrong. 
 2. Argue that the READ and WRITE operations given satisfy BLP.
+     They satisify the BLP because is allows upward flow. READ ensures that the subject level is higher than the object. WRITE ensures that  Ls >= Lo to be bale to change the value. 
 3. Argue that the CREATE and DESTROY operations given satisfy BLP.
+     They satisify the BLP because it creates an object at the subjects level if there is no object there at all in the system. The destroy works because the subjects level must be equal or lower. 
 4. What has to be true for the covert channel on slide 5 to work?
+     In order for them to work, the subjet and object levels must be in agreement for each of the function to be performed to transmit either a 0 or 1. 
 5. Why is the DESTROY statement there?
+     The destroy statement is there to ensure that the subject and obejct levels are what they are supposed to be.
 6. Are the contents of any files different in the two paths?
-7. Why does SL do the same thing in both cases? Must it?
+     No they are not, the path both contain the same contents.
+7. Why does SL do the same thing in both cases? Must it?    
+     Yes because it must differentiate between either seeing a value of 0 or 1. 
 8. Why does SH do different things? Must it?
+     Yes, if Sl and Sh can corordinate their acitivites, SH can transfer arbitrary amounts of information to SL given enough time.
 9. Justify the statement on slide 7 that begins: “If SL ever sees...”
+     If SL sees something different depending ont he actions of SH you could send the bit of information regardless even if it violates the metapolicy because it is still in agreement with the policy and is still secure. (covert channel)T
 
 
 Lecture 14
 1. Explain why “two human users talking over coffee is not a covert channel.”
+     Because the flow is between subjects with the system, not two humans.
 2. Is the following a covert channel? Why or why not?
 Send 0 | Send 1
 ------------------------------------------
 Write (SH, F0, 0) | Write (SH, F0, 1)
 Read (SL, F0) | Read (SL, F0)
+     Yes because  the flow of information between Sh and Sl are different.
+
 3. Where does the bit of information transmitted “reside” in Covert Channel
 #1?
+     This is called covert storage because SH is recording information within the system state.
 4. In Covert Channel #2?
-CS361 Questions: Week 1 6
+     This is a covert timing channel because the information is recorded in the ordering or duration of events on the sytem.
 5. In Covert Channel #3?
+     Process p and q are not allowed to communicate, but they share access to a disk drive. The scanning algorithm services requests in the order of which cylinder is currently closest to the read head. Process p either access cylinder 140 or 160. Process q requests accesses on cylinders 139 and 161. Thus, q recieves values from 139 and then 161 or from 161 and then 139 depending o p's most recent read.
 6. In Covert Channel #4?
+     An implicit channel is one that uses the control flow of aprogram. The resulting values dpends on another value. There are sophisiticated language based information flow tools that check for these kinds of dependies in programming languages. 
 7. Why might a termination channel have low bandwidth?
+     The termination channel only does one thing: destroy, so the bandwidth needed shouldnt be that high. Does not need much bandwidth to see if a computation terminates. 
 8. What would have to be true to implement a power channel?
+     The power consumed must be a certain amount that the system can handle. 
 9. For what sort of devices might power channels arise?
+     Long distance communications or high powered communications that might use power channels. 
 
 
 Lecture 15
 1. Explain why covert channels, while appearing to have such a low bandwidth,
 can potentially be very serious threats.
+     Having low bandwidth means that information transfer rate will be very low this can cause very serious threats because it gives the attack or threat time to infiltrate or do whatever they ar doing on that low bandwidth channel with having a small time contraint. Becuase of such a large time given, you could transfer alot of data still.
 2. Why would it be infeasible to eliminate every potential covert channel?
+     They are pretty much in every system and it is impractical ot remove every single one of them. 
 3. If detected, how could one respond appropriately to a covert channel?
+     Close the channel or observe it and try and increase the noise on the channel.
 4. Describe a scenario in which a covert storage channel exists.
+     BY using the internet and visiting different websites, you leave packets there. these packets can be accessed by attackers attempting to steal information.
 5. Describe how this covert storage channel can be utilized by the sender and
 receiver.
+     As long as the sender and receiver still have access to the covert storage channel the sender and write and the reciever can do a write/read/destroy. The resulting output will either be a 0 or 1 depending on what the sender sends.
 
 
 Lecture 16
 1. Why wouldn’t the “create” operation have an R in the SRMM for the “file
 existence” attribute?
+     the create operation is a modification
 2. Why does an R and M in the same row of an SRMM table indicate a potential
 channel?
+     if someone can check for the R and M of the SRMM  then its a binary flow
 3. If an R and M are in the same column of an SRMM table, does this also
 indicate a potential covert channel? Why or why not?
+     No because they should never be in the same column.
 4. Why would anyone want to go through the trouble to create an SRMM
 table?
+     Control the standard information flow, identify convert channels, and deal with covert channels by closing them, restricting them, or monitoring them. 
 
