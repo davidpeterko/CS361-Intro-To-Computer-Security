@@ -1,3 +1,9 @@
+UTEID: dpk326 
+FIRSTNAME: David; 
+LASTNAME: Ko;
+CSACCOUNT: davidko;
+EMAIL: davidpeterko@gmail.com; 
+
 CS361 Questions: Week 1
 These questions relate to Module(s) 1. Type your answers and submit them via
 email to the TA by 5pm on Thursday, June 11.
